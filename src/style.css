@@ -1,0 +1,180 @@
+body {
+    width: 100vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.logo-box, .search-box, .profile-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-search {
+    width: 25vw;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid lightgray;
+}
+
+.search-button {
+    width: 60px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    margin-left: -5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.micro-button {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.create-button {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.side-bar {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 0 5px;
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    &.active {
+        background-color: lightgray;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0 0 250px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.channel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scroll-button {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    padding: 6px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    z-index: 999;
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
