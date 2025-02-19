@@ -47,6 +47,15 @@ const videos = [
     thumbnail: "thumbnail5.jpg",
     avatar: "mtp.jpg",
     videoUrl: "video5.mp4"
+  },
+  {
+    id: "0006",
+    title: "SƠN TÙNG M-TP | CHÚNG TA CỦA HIỆN TẠI | OFFICIAL MUSIC VIDEO",
+    views: "111 Tr lượt xem - 4 năm trước",
+    channel: "Sơn Tùng M-TP Official",
+    thumbnail: "thumbnail6.jpg",
+    avatar: "mtp.jpg",
+    videoUrl: "video6.mp4"
   }
 ];
 
