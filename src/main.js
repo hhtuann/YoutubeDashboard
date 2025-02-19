@@ -140,6 +140,15 @@ scrollButton.addEventListener("click", () => {
 
 document.querySelector(".logo").addEventListener("click", () => {
   router.navigate('/home');
+
+  document.querySelectorAll(".menu").forEach(menuSelector => {
+    menuSelector.classList.remove("active");
+  });
+
+  const homeMenu = document.querySelector(".side-bar").children[0];
+  if(!homeMenu.classList.contains("active")) {
+    homeMenu.classList.add("active");
+  }
 });
 
 router.resolve();
